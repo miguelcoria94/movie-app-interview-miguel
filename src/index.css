@@ -3,3 +3,10 @@
 * {
   font-family: "Mulish", sans-serif;
 }
+
+body {
+  background: #252735;
+  background: -webkit-linear-gradient(top left, #252735, #252735);
+  background: -moz-linear-gradient(top left, #252735, #252735);
+  background: linear-gradient(to bottom right, #252735, #252735);
+}
