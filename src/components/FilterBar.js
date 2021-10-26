@@ -5,10 +5,12 @@ function FilterBar() {
   return (
     <div className="search__container">
       <div className="search__logo">
-        Movelist<span>.</span>{" "}
+        <span className="search__brand">
+          Movelist<span>.</span>{" "}
+        </span>
       </div>
       <div className="search__filter">
-        <h3>Filter by:</h3>
+        <span className="search__filter-label">Filter by:</span>
         <input type="radio" />
       </div>
     </div>

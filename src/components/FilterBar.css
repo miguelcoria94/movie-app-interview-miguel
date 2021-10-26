@@ -9,7 +9,20 @@
   align-items: center;
 }
 
+.search__brand {
+  font-weight: 900;
+  font-size: 2.5rem;
+  display: inline-block;
+  font-style: italic;
+}
+
 .search__filter {
   display: flex;
   align-items: center;
+}
+
+.search__filter-label {
+  font-size: 1.2rem;
+  display: inline-block;
+  font-weight: 600;
 }
