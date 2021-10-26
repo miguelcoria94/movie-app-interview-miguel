@@ -1,0 +1,8 @@
+.movie__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie__name {
+  color: #fff;
+}
