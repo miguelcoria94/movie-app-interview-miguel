@@ -8,6 +8,7 @@ function Movie({ movieDetails }) {
         <img src="" alt={movieDetails.original_title} />
       </div>
       <div className="movie__details">
+        <span className="movie__details-accent"></span>
         <h5 className="movie__name">{movieDetails.original_title}</h5>
       </div>
     </div>
