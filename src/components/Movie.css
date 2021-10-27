@@ -10,21 +10,6 @@
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.ReactModal__Content {
-  background-color: #22242f !important;
-  display: flex !important;
-  padding: 2rem !important;
-  justify-content: space-around !important;
-  border: 1px solid #393b46 !important;
-  border-radius: 10px !important;
-  cursor: pointer !important;
-}
-
-.ReactModal__Overlay--after-open {
-  background-color: rgba(0, 0, 0, 0.055) !important;
-}
-/* Pre-render the bigger shadow, but hide it */
-/* Transition to showing the bigger shadow on hover */
 .movie__container:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
