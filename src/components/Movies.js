@@ -2,10 +2,12 @@ import React from "react";
 import Movie from "./Movie";
 import "./Movies.css";
 
-function Movies({ movieList }) {
+function Movies({ movieList, movieListTitle }) {
   return (
     <>
-      <h6>Most Popular</h6>
+      <div className="movies__list-title-div">
+        <span>{movieListTitle}</span>
+      </div>
       <div className="movies__grid">
         {movieList.map((movie) => {
           return <Movie movieDetails={movie} key={movie.id} />;

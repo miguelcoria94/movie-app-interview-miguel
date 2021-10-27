@@ -6,6 +6,15 @@
   padding: 2rem;
 }
 
+.movies__list-title-div {
+  padding: 2rem;
+}
+
+.movies__list-title-div {
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 0rem;
+}
 @media only screen and (max-width: 1200px) {
   .movies__grid {
     grid-template-columns: repeat(2, 1fr);
