@@ -29,4 +29,9 @@
   .movies__grid {
     padding: 1rem;
   }
+
+  .movies__list-title-div {
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+  }
 }
