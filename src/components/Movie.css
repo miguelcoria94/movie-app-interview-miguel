@@ -17,7 +17,7 @@
   border-radius: 10px;
   color: #fff;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .movie__rating-icon {
@@ -44,11 +44,6 @@
   color: #fff;
   font-size: 0.8rem;
   font-weight: 800;
-}
-.movie__details-accent {
-  width: 50px;
-  height: 3px;
-  background-color: #0cd278;
   display: block;
   margin-bottom: 0.5rem;
 }
