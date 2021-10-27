@@ -42,11 +42,29 @@
   border-radius: 10px;
   color: #fff;
   font-weight: 600;
+  margin-right: 5px;
   margin-bottom: 0.5rem;
 }
 
 .movie__rating-icon {
   color: #fecd19;
+}
+
+.movie__date {
+  font-size: 0.7rem;
+  border: 1px solid rgb(114, 1, 114);
+  background-color: #38352e;
+  display: inline-block;
+  padding: 0.3rem;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.movie__date-icon {
+  color: purple;
+  margin-right: 5px;
 }
 
 .movie__vote-count {
@@ -67,7 +85,7 @@
 
 .movie__name {
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 800;
   display: block;
   margin-bottom: 0.5rem;

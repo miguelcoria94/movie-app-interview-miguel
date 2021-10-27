@@ -24,6 +24,12 @@ function Movie({ movieDetails }) {
             </span>
             <span className="movie__name">{movieDetails.original_title}</span>
           </div>
+          <div>
+            <span className="movie__date">
+              <span className="fas fa-calendar movie__date-icon"></span>
+              Released on {movieDetails.release_date}{" "}
+            </span>
+          </div>
           <span className="movie__overview">{movieDetails.overview}</span>
         </div>
       </div>
