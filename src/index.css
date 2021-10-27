@@ -5,8 +5,25 @@
 }
 
 body {
-  background: #252735;
-  background: -webkit-linear-gradient(top left, #252735, #252735);
-  background: -moz-linear-gradient(top left, #252735, #252735);
-  background: linear-gradient(to bottom right, #252735, #252735);
+  background: hsla(233, 18%, 18%, 1);
+
+  background: linear-gradient(
+    135deg,
+    hsla(233, 18%, 18%, 1) 30%,
+    hsla(295, 14%, 18%, 1) 99%
+  );
+
+  background: -moz-linear-gradient(
+    135deg,
+    hsla(233, 18%, 18%, 1) 30%,
+    hsla(295, 14%, 18%, 1) 99%
+  );
+
+  background: -webkit-linear-gradient(
+    135deg,
+    hsla(233, 18%, 18%, 1) 30%,
+    hsla(295, 14%, 18%, 1) 99%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#252735", endColorstr="#342835", GradientType=1 );
 }
