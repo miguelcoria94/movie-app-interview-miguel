@@ -15,13 +15,28 @@
   padding: 0.3rem;
   border-radius: 10px;
   color: #fff;
-  position: relative;
-  top: 8px;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .movie__rating-icon {
   color: #fecd19;
+}
+
+.movie__vote-count {
+  font-size: 0.7rem;
+  border: 1px solid #fecc1900;
+  background-color: #38352e00;
+  display: inline-block;
+  padding: 0.3rem;
+  border-radius: 10px;
+  color: #393b46;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+.movie__vote-count-icon {
+  color: #393b46;
 }
 
 .movie__name {
