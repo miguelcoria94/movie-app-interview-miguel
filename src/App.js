@@ -34,13 +34,7 @@ function App() {
         setNoList={setNoList}
         movieList={movieList}
       />
-      {noList ? (
-        <div className="movies__list-title-div">
-          <span>{movieListTitle}</span>
-        </div>
-      ) : (
-        <Movies movieList={movieList} movieListTitle={movieListTitle} />
-      )}
+      <Movies movieList={movieList} movieListTitle={movieListTitle} />
     </>
   );
 }
