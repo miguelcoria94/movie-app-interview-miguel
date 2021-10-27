@@ -1,54 +1,10 @@
 import React from "react";
 import "./Movie.css";
-import Modal from "react-modal";
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    background: "rgba(222, 184, 135, 0)",
-  },
-};
-
-Modal.setAppElement("#root");
-
-function Movie({ movieDetails, modalIsOpen, setIsOpen }) {
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
+function Movie({ movieDetails }) {
   return (
     <>
-      <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <div>I am a modal</div>
-        <form>
-          <button onClick={closeModal}>close</button>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
-      </Modal>
-      <div className="movie__container" data-aos="fade-in" onClick={openModal}>
+      <div className="movie__container" data-aos="fade-in">
         <div className="movie__image-container">
           <img
             className="movie__poster"

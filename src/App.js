@@ -7,7 +7,6 @@ import "./index.css";
 function App() {
   const [movieList, setMovieList] = useState([]);
   const [movieListTitle, setMovieListTitle] = useState("Most Popular");
-  const [modalIsOpen, setIsOpen] = useState(false);
 
   // in a production app I would store this in a .env file for security reasons
   const apiKey = "523c98deb5331759a71c32c9e900c1da";
@@ -30,12 +29,7 @@ function App() {
   return (
     <>
       <FilterBar />
-      <Movies
-        movieList={movieList}
-        movieListTitle={movieListTitle}
-        modalIsOpen={modalIsOpen}
-        setIsOpen={setIsOpen}
-      />
+      <Movies movieList={movieList} movieListTitle={movieListTitle} />
     </>
   );
 }
