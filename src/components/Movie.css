@@ -1,6 +1,5 @@
 .movie__container {
   display: flex;
-  flex-direction: column;
   background-color: #22242f;
   padding: 2rem;
   justify-content: space-around;
@@ -9,10 +8,24 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.mmovie__image-container {
-  margin-bottom: 0.5rem;
+.movie__poster {
+  height: 200px;
+  width: auto;
+  margin: auto;
 }
 
+.movie__image-container {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.movie__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
 .movie__rating {
   font-size: 0.7rem;
   border: 1px solid #fecd19;

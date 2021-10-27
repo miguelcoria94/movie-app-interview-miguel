@@ -5,7 +5,11 @@ function Movie({ movieDetails }) {
   return (
     <div className="movie__container">
       <div className="movie__image-container">
-        <img src="" alt={movieDetails.original_title} />
+        <img
+          className="movie__poster"
+          src={`https://image.tmdb.org/t/p/w500/${movieDetails.poster_path}`}
+          alt={movieDetails.original_title}
+        />
       </div>
       <div className="movie__details">
         <div>
