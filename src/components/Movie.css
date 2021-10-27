@@ -6,6 +6,11 @@
   justify-content: space-around;
   border: 1px solid #393b46;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.mmovie__image-container {
+  margin-bottom: 0.5rem;
 }
 
 .movie__rating {
