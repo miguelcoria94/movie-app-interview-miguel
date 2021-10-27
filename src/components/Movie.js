@@ -4,7 +4,12 @@ import "./Movie.css";
 function Movie({ movieDetails }) {
   return (
     <div className="movie__container">
-      <h5 className="movie__name">{movieDetails.original_title}</h5>
+      <div className="movie__image-container">
+        <img src="" alt={movieDetails.original_title} />
+      </div>
+      <div className="movie__details">
+        <h5 className="movie__name">{movieDetails.original_title}</h5>
+      </div>
     </div>
   );
 }
