@@ -3,12 +3,14 @@
   flex-direction: column;
   background-color: #22242f;
   padding: 2rem;
+  justify-content: space-around;
   border: 1px solid #393b46;
 }
 
 .movie__rating {
   font-size: 0.7rem;
   border: 1px solid #fecd19;
+  background-color: #38352e;
   display: inline-block;
   padding: 0.3rem;
   border-radius: 10px;
