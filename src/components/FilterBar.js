@@ -1,7 +1,17 @@
 import React from "react";
 import "./FilterBar.css";
 
-function FilterBar() {
+function FilterBar({ setMovieListTitle, setNoList, movieList }) {
+  function setSearch(e) {
+    e.preventDefault();
+    setNoList(true);
+    setMovieListTitle("Searching...");
+    if (!e.target.value) {
+      setNoList(false);
+      setMovieListTitle("Most Popular");
+      console.log(movieList);
+    }
+  }
   return (
     <div className="search__container">
       <div className="search__logo">
@@ -11,7 +21,7 @@ function FilterBar() {
       </div>
       <div className="search__filter">
         <span className="search__filter-label">Filter by</span>
-        <input type="radio" />
+        <input type="search" onChange={setSearch} />
       </div>
     </div>
   );

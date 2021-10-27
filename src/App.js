@@ -7,6 +7,7 @@ import "./index.css";
 function App() {
   const [movieList, setMovieList] = useState([]);
   const [movieListTitle, setMovieListTitle] = useState("Most Popular");
+  const [noList, setNoList] = useState(false);
 
   // in a production app I would store this in a .env file for security reasons
   const apiKey = "523c98deb5331759a71c32c9e900c1da";
@@ -22,14 +23,24 @@ function App() {
       })
       .catch(function (error) {
         // handle error
-        console.log(error);
       });
   }, []);
 
   return (
     <>
-      <FilterBar />
-      <Movies movieList={movieList} movieListTitle={movieListTitle} />
+      <FilterBar
+        setMovieList={setMovieList}
+        setMovieListTitle={setMovieListTitle}
+        setNoList={setNoList}
+        movieList={movieList}
+      />
+      {noList ? (
+        <div className="movies__list-title-div">
+          <span>{movieListTitle}</span>
+        </div>
+      ) : (
+        <Movies movieList={movieList} movieListTitle={movieListTitle} />
+      )}
     </>
   );
 }

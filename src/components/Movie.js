@@ -4,7 +4,7 @@ import "./Movie.css";
 function Movie({ movieDetails }) {
   return (
     <>
-      <div className="movie__container" data-aos="fade-in">
+      <div className="movie__container">
         <div className="movie__image-container">
           <img
             className="movie__poster"
