@@ -11,3 +11,9 @@
   text-decoration: none;
   padding: 0.5rem;
 }
+
+@media only screen and (max-width: 560px) {
+  .footer__link {
+    font-size: 0.7rem;
+  }
+}
