@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FilterBar from "./components/FilterBar";
 import Movies from "./components/Movies";
+import Footer from "./components/Footer";
 import axios from "axios";
 import "./index.css";
 
@@ -38,6 +39,7 @@ function App() {
         popularMovies={popularMovies}
       />
       <Movies movieList={movieList} movieListTitle={movieListTitle} />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,13 @@
+.footer__container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.footer__link {
+  color: orange;
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem;
+}
