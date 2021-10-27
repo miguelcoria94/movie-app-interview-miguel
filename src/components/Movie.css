@@ -5,6 +5,7 @@
   padding: 2rem;
   justify-content: space-around;
   border: 1px solid #393b46;
+  border-radius: 10px;
 }
 
 .movie__rating {
