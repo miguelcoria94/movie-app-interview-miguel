@@ -2,7 +2,7 @@ import React from "react";
 import Movie from "./Movie";
 import "./Movies.css";
 
-function Movies({ movieList, movieListTitle }) {
+function Movies({ movieList, movieListTitle, modalIsOpen, setIsOpen }) {
   return (
     <>
       <div className="movies__list-title-div">
@@ -10,7 +10,14 @@ function Movies({ movieList, movieListTitle }) {
       </div>
       <div className="movies__grid">
         {movieList.map((movie) => {
-          return <Movie movieDetails={movie} key={movie.id} />;
+          return (
+            <Movie
+              movieDetails={movie}
+              key={movie.id}
+              modalIsOpen={modalIsOpen}
+              setIsOpen={setIsOpen}
+            />
+          );
         })}
       </div>
     </>
