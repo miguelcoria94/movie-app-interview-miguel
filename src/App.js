@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import FilterBar from "./components/FilterBar";
 import Movies from "./components/Movies";
 import Footer from "./components/Footer";
+import PageNumber from "./components/PageNumber";
 import axios from "axios";
 import "./index.css";
 
 function App() {
   const [movieList, setMovieList] = useState([]);
   const [movieListTitle, setMovieListTitle] = useState("Most Popular");
-  const [noList, setNoList] = useState(false);
   const [popularMovies, setPopularMovies] = useState([]);
 
   // in a production app I would store this in a .env file for security reasons
@@ -34,10 +34,10 @@ function App() {
       <FilterBar
         setMovieList={setMovieList}
         setMovieListTitle={setMovieListTitle}
-        setNoList={setNoList}
         movieList={movieList}
         popularMovies={popularMovies}
       />
+      <PageNumber />
       <Movies movieList={movieList} movieListTitle={movieListTitle} />
       <Footer />
     </>

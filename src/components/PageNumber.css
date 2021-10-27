@@ -1,0 +1,13 @@
+.pagenumber__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 0.7rem;
+  color: orange;
+}
+
+@media only screen and (max-width: 800px) {
+  .pagenumber__container {
+    padding: 1rem;
+  }
+}

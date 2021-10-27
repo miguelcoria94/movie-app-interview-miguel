@@ -8,6 +8,7 @@ function Footer() {
         className="footer__link"
         href="https://github.com/miguelcoria94/movie-app-interview-miguel"
         target="_blank"
+        rel="noreferrer"
       >
         <span className="fab fa-github"></span> GitHub Repo
       </a>
@@ -15,6 +16,7 @@ function Footer() {
         className="footer__link"
         href="https://www.linkedin.com/in/miguel-coria-273888130/"
         target="_blank"
+        rel="noreferrer"
       >
         <span className="fab fa-linkedin"></span> LinkedIn Profile
       </a>
