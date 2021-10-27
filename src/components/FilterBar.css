@@ -1,7 +1,7 @@
 .search__container {
   display: flex;
-  justify-content: space-around;
-  padding: 0.5rem;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
 }
 
 .search__logo {
