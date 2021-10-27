@@ -37,6 +37,12 @@
   color: #797a84;
 }
 
+@media only screen and (max-width: 800px) {
+  .search__container {
+    padding: 0.5rem 1rem;
+  }
+}
+
 @media only screen and (max-width: 986px) {
   .search__container {
     flex-direction: column;

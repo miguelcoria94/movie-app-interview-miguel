@@ -4,11 +4,14 @@ import "./Movies.css";
 
 function Movies({ movieList }) {
   return (
-    <div className="movies__grid">
-      {movieList.map((movie) => {
-        return <Movie movieDetails={movie} key={movie.id} />;
-      })}
-    </div>
+    <>
+      <h6>Most Popular</h6>
+      <div className="movies__grid">
+        {movieList.map((movie) => {
+          return <Movie movieDetails={movie} key={movie.id} />;
+        })}
+      </div>
+    </>
   );
 }
 

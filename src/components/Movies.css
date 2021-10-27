@@ -16,4 +16,8 @@
   .movies__grid {
     grid-template-columns: 100%;
   }
+
+  .movies__grid {
+    padding: 1rem;
+  }
 }
