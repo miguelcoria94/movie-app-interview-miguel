@@ -1,20 +1,28 @@
 import React from "react";
 import "./FilterBar.css";
 
-function FilterBar({ setMovieListTitle, setNoList, movieList, setMovieList }) {
+function FilterBar({
+  setMovieListTitle,
+  setNoList,
+  movieList,
+  setMovieList,
+  popularMovies,
+}) {
   function setSearch(e) {
     e.preventDefault();
-    setMovieListTitle("Sorted by average vote");
-    setMovieList(
+
+    if (e.target.value === "popular") {
+      setMovieListTitle("Most Popular");
+      movieList.sort((a, b) => {
+        return b.popularity - a.popularity;
+      });
+    }
+
+    if (e.target.value === "rating") {
+      setMovieListTitle("Highest Rated");
       movieList.sort((a, b) => {
         return b.vote_average - a.vote_average;
-      })
-    );
-
-    if (!e.target.value) {
-      setNoList(false);
-      setMovieListTitle("Most Popular");
-      console.log(movieList);
+      });
     }
   }
   return (
@@ -25,10 +33,10 @@ function FilterBar({ setMovieListTitle, setNoList, movieList, setMovieList }) {
         </span>
       </div>
       <div className="search__filter">
-        <span className="search__filter-label">Sort by year</span>{" "}
-        <select onChange={setSearch}>
-          <option value="">Default</option>
-          <option value="rating">average rating</option>
+        <span className="search__filter-label">Sorted by </span>
+        <select onChange={setSearch} className="select">
+          <option value="popular">most popular</option>
+          <option value="rating">highest rated</option>
         </select>
       </div>
     </div>

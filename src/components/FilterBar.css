@@ -35,6 +35,7 @@
   display: inline-block;
   font-weight: 600;
   color: #797a84;
+  margin-right: 10px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -47,5 +48,9 @@
   .search__container {
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .search__filter {
+    padding-top: 1rem;
   }
 }

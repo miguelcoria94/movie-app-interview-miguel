@@ -8,6 +8,7 @@ function App() {
   const [movieList, setMovieList] = useState([]);
   const [movieListTitle, setMovieListTitle] = useState("Most Popular");
   const [noList, setNoList] = useState(false);
+  const [popularMovies, setPopularMovies] = useState([]);
 
   // in a production app I would store this in a .env file for security reasons
   const apiKey = "523c98deb5331759a71c32c9e900c1da";
@@ -19,6 +20,7 @@ function App() {
       )
       .then(function (response) {
         // handle success
+        setPopularMovies(response.data.results);
         setMovieList(response.data.results);
       })
       .catch(function (error) {
@@ -33,6 +35,7 @@ function App() {
         setMovieListTitle={setMovieListTitle}
         setNoList={setNoList}
         movieList={movieList}
+        popularMovies={popularMovies}
       />
       <Movies movieList={movieList} movieListTitle={movieListTitle} />
     </>
